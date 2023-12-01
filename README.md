@@ -46,11 +46,12 @@ Siéntete libre de compartir este proyecto con otros y contribuir si quieres mej
 
 ## Redes Sociales
 
-✔  No olvides suscribirte, compartir, darle like y dejar tus comentarios en la sección de abajo. ¡Tu apoyo es muy importante para mí  y me ayudas a seguir creando contenido. 💚
+No olvides suscribirte, compartir, darle like y dejar tus comentarios en la sección de abajo. ¡Tu apoyo es muy importante para mí y me ayudas a seguir creando contenido! 💚
 
-1-🎬 Youtube: https://www.youtube.com/@JuancitoPenaV 
-2-👨‍💼 LinkedIn: https://www.linkedin.com/in/juancitope%C3%B1a/
-3-📰 Blog: https://advisertecnology.com/
-4-📷 Instagram: https://www.instagram.com/juancito.pena.v/
-5-📑 Facebook: https://www.facebook.com/juancito.p.v
-6-🐦 Twitter: https://twitter.com/JuancitoPenaV
+1. 🎬 [Youtube](https://www.youtube.com/@JuancitoPenaV)
+2. 👨‍💼 [LinkedIn](https://www.linkedin.com/in/juancitope%C3%B1a/)
+3. 📰 [Blog](https://advisertecnology.com/)
+4. 📷 [Instagram](https://www.instagram.com/juancito.pena.v/)
+5. 📑 [Facebook](https://www.facebook.com/juancito.p.v)
+6. 🐦 [Twitter](https://twitter.com/JuancitoPenaV)
+
