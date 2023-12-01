@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda de Palabras</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #faffcd; /* Fondo amarillo limón claro */
+        }
+
+        #contenedor {
+            border: 2px solid black;
+            padding: 20px;
+            width: 70%;
+            background-color: #fff; /* Fondo blanco */
+            text-align: center;
+        }
+
+        h2 {
+            color: #333; /* Texto oscuro */
+        }
+
+        input {
+            width: calc(80% - 16px);
+            padding: 8px;
+            margin-bottom: 10px;
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        button {
+            width: calc(85% - 16px);
+            padding: 10px;
+            background-color: #4caf50; /* Verde */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+        }
+
+        #listaPalabras {
+            border: 2px solid #ddd; /* Borde gris */
+            padding: 10px;
+            background-color: #f9f9f9; /* Fondo gris claro */
+            max-height: 150px; /* Altura máxima para permitir desplazamiento */
+            overflow-y: auto; /* Habilitar desplazamiento vertical si es necesario */
+            margin-bottom: 20px; /* Margen inferior para separar la lista del resto del contenido */
+        }
+
+        .palabra-lista {
+            display: inline-block;
+            padding: 5px;
+            margin: 2px;
+            background-color: #ffff66; /* Amarillo */
+            text-align: center;
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        .resaltado {
+            background-color: #4caf50; /* Verde */
+            color: white;
+            border-radius: 4px; /* Ajustado a 4px */
+        }
+
+        #resultado {
+            font-weight: bold;
+            text-align: center;
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contenedor">
+        <h2>Búsqueda de Palabras</h2>
+
+        <!-- Lista fija de palabras -->
+        <div id="listaPalabras">
+            <!-- Lista de palabras -->
+            <p>
+                <span class="palabra-lista">ciencia de datos</span>
+                <span class="palabra-lista">análisis de datos</span>
+                <span class="palabra-lista">programación web</span>
+                <span class="palabra-lista">móvil</span>
+                <span class="palabra-lista">desktop</span>
+                <span class="palabra-lista">temas informáticos</span>
+                <span class="palabra-lista">Python</span>
+                <span class="palabra-lista">JavaScript</span>
+                <span class="palabra-lista">SQL</span>
+                <span class="palabra-lista">machine learning</span>
+                <span class="palabra-lista">big data</span>
+                <span class="palabra-lista">API</span>
+                <span class="palabra-lista">HTML</span>
+                <span class="palabra-lista">CSS</span>
+                <span class="palabra-lista">React</span>
+                <span class="palabra-lista">Angular</span>
+                <span class="palabra-lista">Node.js</span>
+                <span class="palabra-lista">Java</span>
+                <span class="palabra-lista">Swift</span>
+                <span class="palabra-lista">Android</span>
+                <span class="palabra-lista">iOS</span>
+                <span class="palabra-lista">data science</span>
+                <span class="palabra-lista">data analysis</span>
+                <span class="palabra-lista">web development</span>
+                <span class="palabra-lista">software engineering</span>
+                <span class="palabra-lista">data visualization</span>
+                <span class="palabra-lista">cloud computing</span>
+                <span class="palabra-lista">database</span>
+                <span class="palabra-lista">front-end</span>
+                <span class="palabra-lista">back-end</span>
+            </p>
+        </div>
+
+        <!-- Caja de texto para ingresar la palabra a buscar -->
+        <input type="text" id="palabraBusqueda" placeholder="Ingrese la palabra a buscar">
+        <br>
+
+        <!-- Botón para realizar la búsqueda -->
+        <button onclick="buscarPalabra()">Buscar</button>
+        <br>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script>
+        // Lista fija de palabras
+        const palabras = [
+            "ciencia de datos", "análisis de datos", "programación web", "móvil", "desktop",
+            "temas informáticos", "Python", "JavaScript", "SQL", "machine learning", "big data",
+            "API", "HTML", "CSS", "React", "Angular", "Node.js", "Java", "Swift", "Android", "iOS",
+            "data science", "data analysis", "web development", "software engineering", "data visualization",
+            "cloud computing", "database", "front-end", "back-end"
+        ];
+
+        // Función para buscar la palabra ingresada por el usuario
+        function buscarPalabra() {
+            const palabraIngresada = document.getElementById("palabraBusqueda").value;
+
+            // Obtener el contenedor para mostrar los resultados
+            const contenedor = document.getElementById("contenedor");
+
+            // Crear un elemento para mostrar la lista y resultados
+            const resultadoElemento = document.getElementById("resultado");
+            
+            let encontrado = false;
+            let posicion = -1;
+
+            for (let i = 0; i < palabras.length; i++) {
+                if (palabras[i].toLowerCase().includes(palabraIngresada.toLowerCase())) {
+                    encontrado = true;
+                    posicion = i + 1; // Sumamos 1 para mostrar la posición empezando desde 1
+                    break;
+                }
+            }
+
+            if (encontrado) {
+                resultadoElemento.innerHTML = `<p>Palabra "${palabraIngresada}" encontrada en la posición ${posicion}.</p>`;
+                // Resaltar la palabra encontrada
+                const listaPalabras = document.getElementById("listaPalabras").getElementsByTagName("span");
+                for (let i = 0; i < listaPalabras.length; i++) {
+                    listaPalabras[i].classList.remove("resaltado");
+                }
+                listaPalabras[posicion - 1].classList.add("resaltado");
+            } else {
+                resultadoElemento.innerHTML = `<p>Palabra "${palabraIngresada}" no encontrada en la lista.</p>`;
+            }
+        }
+    </script>
+</body>
+
+</html>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
