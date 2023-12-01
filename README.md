@@ -2,11 +2,11 @@
 
 Este proyecto es un ejercicio simple de búsqueda de palabras en una lista predefinida, implementado en HTML, CSS y JavaScript.
 
-![Vista previa del proyecto](imagen.png)
+![Vista previa del proyecto](Screenshot_51.png)
 
-![Vista previa del proyecto](imagen.png)
+![Vista previa del proyecto](Screenshot_52.png)
 
-![Vista previa del proyecto](imagen.png)
+![Vista previa del proyecto](Screenshot_53.png)
 
 ## Archivos y Estructura
 
