@@ -1,6 +1,6 @@
 # 🔍 Búsqueda de Palabras Prueba Técnica 🚀
 
-⚙️ ## Problema
+ ## ⚙️ Problema
 
 Tienes una lista fija de **palabras clave** relacionadas con la **programación** y el **desarrollo de software**, y necesitas implementar una **función de búsqueda** que permita a los usuarios encontrar rápidamente una palabra dentro de esa lista. Si la palabra buscada es encontrada, se debe mostrar su **posición** en la lista (empezando desde 1) y resaltar esa palabra en una interfaz web. Si la palabra no es encontrada, se debe mostrar un mensaje indicando que no existe en la lista. ❌
 
