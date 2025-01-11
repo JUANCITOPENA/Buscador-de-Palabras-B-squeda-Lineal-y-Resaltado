@@ -43,37 +43,36 @@ Este proyecto es un ejercicio **simple** de **búsqueda de palabras** en una lis
 
 ![Vista previa del proyecto](Screenshot_53.png)
 
-## Archivos y Estructura
+## 📂 Archivos y Estructura
 
-- `index.html`: Contiene la estructura HTML de la página.
-- `styles.css`: Archivo CSS con los estilos para la interfaz.
-- `script.js`: Código JavaScript para la funcionalidad de búsqueda.
+- 📄 `index.html`: Contiene la estructura HTML de la página.
+- 🎨 `styles.css`: Archivo CSS con los estilos para la interfaz.
+- ⚡ `script.js`: Código JavaScript para la funcionalidad de búsqueda.
 
-## Uso
+## 🚀 Uso
 
-1. Clona o descarga el repositorio.
-2. Abre `index.html` en tu navegador.
-3. Ingresa una palabra en el campo de búsqueda y presiona "Buscar" para encontrar su posición en la lista.
-4. Explora la lista predefinida de palabras.
+1. 📥 Clona o descarga el repositorio.
+2. 🌐 Abre `index.html` en tu navegador.
+3. ⌨️ Ingresa una palabra en el campo de búsqueda y presiona "Buscar" para encontrar su posición en la lista.
+4. 📖 Explora la lista predefinida de palabras.
 
-## Licencia
+## ⚖️ Licencia
 
 Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
 
-## Cómo Clonar
+## 📥 Cómo Clonar
 
 Puedes clonar este repositorio usando el siguiente comando:
 
-
-## Cómo Compartir
+## 🤝 Cómo Compartir
 
 Siéntete libre de compartir este proyecto con otros y contribuir si quieres mejorar la funcionalidad o el diseño.
 
-## Cómo Contribuir
+## 🛠️ Cómo Contribuir
 
 ¡Las contribuciones son bienvenidas! Si tienes ideas para mejorar el proyecto, realiza un fork y crea una solicitud de extracción (pull request).
 
-## Redes Sociales
+## 🌐 Redes Sociales
 
 No olvides suscribirte, compartir, darle like y dejar tus comentarios en la sección de abajo. ¡Tu apoyo es muy importante para mí y me ayudas a seguir creando contenido! 💚
 
